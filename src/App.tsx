@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { StatusCardsGroup } from './components/StatusCardsGroup'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,9 +37,11 @@ function App() {
           Edit <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded">src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="text-gray-500">
+      <p className="text-gray-500 mb-8">
         Click on the Vite and React logos to learn more
       </p>
+      
+      <StatusCardsGroup />
       </div>
     </div>
   )
